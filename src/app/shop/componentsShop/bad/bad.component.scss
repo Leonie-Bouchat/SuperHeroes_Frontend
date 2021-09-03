@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    background-color: #000000;
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    color: #ff4040;
+}
+
+div{
+    background-color: #000000;
+}
+
+img{
+    width: 80px;
+    height: auto;
+}
+table{
+    margin-top: 50px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+#vedette{
+    text-align: center;
+    color: #ff4040;
+    font-weight: 800;
+    font-size: 2rem;
+}
+#imgVedette{
+    width: 300px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+button{
+    background-color: #ff4040;
+    color: black;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#btn-vedette{
+    text-align: center;
+    
+}

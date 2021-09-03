@@ -1,0 +1,46 @@
+<!-- <div *ngFor="let Heroe of Heroes">
+    {{Heroe.name}}
+    
+</div> -->
+<!-- <div *ngIf="testHTML">
+  <p>Bonjour {{testHTML.name}} !</p>
+</div> -->
+<div id="vedette">
+  <h3>Héro du jour:</h3>
+  <ng-container *ngIf="testHTML">
+    <p>{{testHTML.name}} !</p>
+    <!-- <p>{{testHTML.id}}</p>
+    <p>{{testHTML.biography.alignment}}</p> -->
+    <img id="imgVedette" src="{{testHTML.image.url}}" alt="" >
+  </ng-container>
+</div>
+<div id="btn-vedette">
+  <button (click)="reserveHero(testHTML)">Réserve le héro du jour !</button>
+</div>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Illustration</th>
+        <th>Héro</th>
+        <th>Genre</th>
+        <th>Race</th>
+        <th>Ajouter au panier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let hero of Heroes">
+        <ng-container *ngIf="hero.biography.alignment==='good'">
+          <tr>
+            <td *ngIf="hero"><img src="{{hero.image.url}}" (error)="setSrc(image)" alt="" #image></td>
+            <td *ngIf="hero">{{hero.name}}</td>
+            <td *ngIf="hero">{{hero.appearance.gender}}</td>
+            <td *ngIf="hero">{{hero.appearance.race}}</td>
+            <td><button (click)="reserveHero(hero)">+</button></td>
+            <td><a routerLink="/shop/cart"><button>Go to Cart</button></a></td>
+          </tr>
+        </ng-container>
+      </ng-container>
+    </tbody>
+  </table>
+</div>

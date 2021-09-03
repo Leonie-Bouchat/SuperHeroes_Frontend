@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://cloud.typography.com/6280314/7070352/css/fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'); /* Footer font */
+
+.Footer {
+    background: #ffac40;
+    .container {
+        max-width: 70rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        a {
+            text-decoration: none;
+        }
+        .superHuber {
+            font-size: 40px;
+            font-family: 'Indie Flower', cursive;
+            color: #fa3030;
+        }
+        .cacher {
+            font-size: 20px;
+            font-family: 'Indie Flower', cursive;
+            color: #ffac40;
+        }
+
+        /** Logo **/
+
+        .logo-Stack {
+            padding: 0 1.5rem;
+            z-index: 5;
+            max-width: 400px;
+            .logo {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .entity {
+            .tamu-mark {
+                font-family: 'Indie Flower', cursive;
+                color: #000;
+                text-align: center;
+                margin-bottom: 7px;
+                font-size: 20px;
+            }
+            .unit-mark {
+                font-family: 'Indie Flower', cursive;
+                text-align: center;
+                letter-spacing: 1px;
+                font-size: 22px;
+                font-family: 'Indie Flower', cursive;
+                color: #000;
+                margin: 10px 0px;
+            }
+        }
+    }
+
+    /** -- Sub Footer -- **/
+    .subfooter {
+        background: #1565b0;
+        padding: 10px;
+        margin-top: 10px;
+        font-family: 'Indie Flower', cursive;
+
+    .satisfait {
+        font-size: 20px;
+        align-items: flex-end;
+        text-align: right;
+        color:#fff;
+    }
+    .copyright {
+        font-size: 44px;
+        text-align: center;
+        color:#ffac40;
+    }
+        .menu {
+            display: flex;
+            max-width: 50rem;
+            margin: auto;
+            color: #ffac40;
+            font-size: 30px;
+            
+            li {
+                list-style-type: none;
+                a {
+                    text-align: center;
+                    padding: 1px;
+                    margin: 5px 0px 5px 10px;
+                    margin-left: -90%;
+                    color: #ffac40;
+                    text-decoration: none;
+                    &:hover {
+                        color: #fa3030;
+                    }
+                }
+            }
+        }
+    }
+}

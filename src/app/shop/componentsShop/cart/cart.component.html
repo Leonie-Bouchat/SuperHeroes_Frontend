@@ -1,0 +1,32 @@
+<div>
+  <h3>Votre panier :</h3>
+</div>
+<div>
+  <table>
+      <thead>
+        <tr>
+          <th>Illustration</th>
+          <th>Héro</th>
+          <th>Genre</th>
+          <th>Race</th>
+          <th>Prix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let hero of selectedHeroes">
+            <tr>
+              <td *ngIf="hero"><img src="{{hero.image.url}}" alt="" #image></td>
+              <td *ngIf="hero">{{hero.name}}</td>
+              <td *ngIf="hero">{{hero.appearance.gender}}</td>
+              <td *ngIf="hero">{{hero.appearance.race}}</td>
+              <td><button (click)="deleteHero(hero)">Delete</button></td>
+            </tr>
+        </ng-container>
+      </tbody>
+  </table>
+</div>
+
+  <div id="confirmer">
+    <a routerLink="/delivery"><button>Confirmer le panier</button></a>
+  </div>
+

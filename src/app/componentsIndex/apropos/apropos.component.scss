@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"); /* Footer font */
+//todo   ecriture     font-family: 'Indie Flower', cursive;
+
+*{
+    font-family: 'Indie Flower', cursive; //ecriture de google fonts <
+    text-decoration: none; //Reglage pour ne pas avoir la ligne en dessous des liens <
+}
+*:hover{
+    text-decoration: none; //Reglage pour ne pas avoir la ligne en dessous des liens quand la souris est positionné dessus.<
+}
+
+//? Apropos_separateur d'image_Ornella_________________________:
+
+
+// div.separer{ //image jaune pour séparer les 2 images <
+//     background-image: url("../../../assets/acceuil_separateur.png");
+//     background-repeat: no-repeat;
+// }
+
+//? Apropos_BODY_Ornella_________________________:
+
+div{ // Mise en page du body
+
+    background-image: url("../../../assets/superHeroesBanniere.jpg");
+    background-size: 100%;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 1%;
+}
+
+h1{
+    color: white;
+    margin-left: 4%;
+    font-size: 32px;
+    text-align: left;
+    padding-top: 2%;
+}
+
+p{
+    margin-left: 4%;
+    color: #feac40;
+    font-size: 30px;
+}
+
+h2{
+    color: #fe7200;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 4%;
+    padding-top: 4%;
+}
+
+h4{
+    font-size: 38px;
+    text-align: center;
+    color:#ffeacb;
+    margin-right: 2%;
+
+}
+
+h5{
+    font-size: 18px;
+    text-align: justify;
+    color:#ffeacb;
+    padding-left: 4%;
+}
+
+h3{
+    font-size: 22px;
+    text-align: left;
+    color: #feac40;
+    margin-left: 4%;
+}
+
+img{
+    display: flex;
+    position: absolute;
+    padding-left: 85%;
+}
